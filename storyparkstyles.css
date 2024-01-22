@@ -1,13 +1,13 @@
 h1 {
-   margin-left: auto;
-    margin-right: auto;
-   text-color: white;
+    font-size: 26px;
 }
 
-body {
-   background-color: #0a0a23;
+.undertext {
+    font-size: 18px;
 }
 
-#storyinput {
-   
+.story-box {
+    margin: 1;
+    border: solid 1px;
+    font-size: 14px;
 }
