@@ -5,6 +5,11 @@ h1 {
     font-family: courier;
 }
 
+.page-logo-text-box {
+    margin: auto;
+    padding 20px;
+}
+
 .undertext {
     font-size: 18px;
     font-weight: 350;
