@@ -1,13 +1,19 @@
 /* - page logo styling - */
 
 
-#logo-image-id {
+.logo-image-case {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
             margin: 0;
             max-height: 500px;
             max-width: 600px;
+}
+
+#logo-image-id {
+            display: block;
+            margin: auto;
 }
 
 .page-logo-text-box-outer {
