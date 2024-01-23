@@ -121,3 +121,25 @@ body {
    background-color: #FFFEFB;
    overflow-x: hidden;
 }
+
+
+
+
+/* For testing */
+
+
+.test-element {
+
+
+            width: 50%; /* Takes up half the screen on desktop */
+            background-color: lightblue; /* Just for visibility, you can customize this */
+            margin: 0 auto; /* Center the element on desktop */
+            
+}
+
+  @media only screen and (max-width: 767px) {
+            ..test-element {
+                width: 100%; /* Takes up the entire screen on mobile */
+            
+                         }
+
