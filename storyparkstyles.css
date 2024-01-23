@@ -130,15 +130,25 @@ body {
 
 .test-element {
 
-
+            font-family: Cambria;
+    padding: 1em;
+    line-height: 2em;
+    font-size: 1.1em;
+            border: sold 2px;
+            
             width: 50%; /* Takes up half the screen on desktop */
-            background-color: lightblue; /* Just for visibility, you can customize this */
             margin: 0 auto; /* Center the element on desktop */
             
 }
 
   @media only screen and (max-width: 767px) {
             ..test-element {
+                                  font-family: Cambria;
+    padding: 1em;
+    line-height: 2em;
+    font-size: 1.1em;
+            border: sold 2px;
+                        
                 width: 100%; /* Takes up the entire screen on mobile */
             
                          }
