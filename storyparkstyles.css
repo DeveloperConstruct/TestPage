@@ -22,6 +22,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 2em auto 0 auto;
 
             
    max-width: 100% ; 
@@ -37,7 +38,7 @@
 }
 
 .logo-undertext {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: lighter;
     line-height: 0.3em;
 }
