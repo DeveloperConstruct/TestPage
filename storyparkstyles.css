@@ -32,11 +32,12 @@
 }
 
 .story-name {
-   font-size: 16px;
+   font-size: 18px;
+   font-weight: bold;
 }
 
 .author-name {
-   font-size: 10px;
+   font-size: 14px;
 }
 
 /*story box styling */
