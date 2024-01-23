@@ -2,13 +2,13 @@
 
 
 .page-logo-text-box {
-    padding: 30px;
+    margin: auto;
 }
 
 h1 {
     font-size: 36px;
     font-weight: 2000;
-    padding: auto;
+    margin: auto;
     font-family: courier;
 }
 
