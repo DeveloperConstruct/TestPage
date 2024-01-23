@@ -12,7 +12,7 @@
 #logo-image-id {
             display: block;
             margin: auto;
-            max-width: 30%;
+            max-width: 45%;
             max-width: auto;
 }
 
@@ -25,10 +25,9 @@
 
             
    width: 100% ; 
-   margin: 20px;
+   margin: 0;
    font-family: 'Courier New', Courier;
    text-align: center;
-   padding: 0;
 }
 
 .page-logo-text-inner {
