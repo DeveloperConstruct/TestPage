@@ -14,7 +14,7 @@
 }
 
 .logo-undertext {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
 }
 
@@ -35,6 +35,7 @@
 .story-name {
    font-size: 18px;
    font-weight: bold;
+   letter spacing: 5px;
 }
 
 .author-name {
