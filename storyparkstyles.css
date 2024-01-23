@@ -49,7 +49,7 @@
 /*story Title / Author styling */
 
 .story-title-box {
-    margin: auto;
+    margin: 2em auto 2em auto;
     max-width: 40%;
     max-height: auto;
     border: solid 2px;
@@ -58,7 +58,6 @@
     text-spacing: 0.2em;
     line-height: 1em;
     font-family: 'Courier New', Courier;
-    margin: 2em;
 }
 
 .story-name {
