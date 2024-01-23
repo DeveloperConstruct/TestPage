@@ -20,7 +20,7 @@
    margin: 20px;
    font-family: 'Courier New', Courier;
    text-align: center;
-   line-height: 5px;
+   line-height: 10px;
 }
 
 .page-logo-text-inner {
@@ -46,13 +46,12 @@
     border: solid 2px;
     border-radius: 10px;
     text-align: center;
-    line-spacing: 15px;
+    line-height: 10px;
 }
 
 .story-name {
    font-size: 18px;
    font-weight: bold;
-   letter spacing: 5px;
 }
 
 .author-name {
