@@ -8,7 +8,7 @@ max-height: 100px;
 
 .page-logo-text-box-outer {
    width: 100% ; 
-   margin: auto;
+   margin: 30px;
    font-family: 'Courier New', Courier;
    text-align: center;
 }
