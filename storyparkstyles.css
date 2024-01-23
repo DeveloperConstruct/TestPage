@@ -21,7 +21,7 @@
 
 
 
-/* - titles styling for stories- */
+/* - titles styling for Stories- */
 
 .full-story-content-box {
     font-family: 'Courier New', Courier;
@@ -31,11 +31,13 @@
 .story-title-box {
     margin: auto;
     width: 500px;
+    border: 2px;
 }
 
 .story-text-box-outer {
     margin: auto;
     width: 700px;
+    border: 2px;
 }
 
 .story-text-box-inner {
