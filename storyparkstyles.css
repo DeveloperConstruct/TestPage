@@ -16,6 +16,8 @@
             max-width: auto;
 }
 
+/* - Text directly under the logo - */
+
 .page-logo-text-box-outer {
    display: flex;
    justify-content: center;
@@ -26,7 +28,7 @@
    margin: 20px;
    font-family: 'Courier New', Courier;
    text-align: center;
-   padding: 0.5em;
+   padding: 0;
 }
 
 .page-logo-text-inner {
