@@ -134,7 +134,7 @@ body {
     padding: 1em;
     line-height: 2em;
     font-size: 1.1em;
-    border: sold 2px;
+    border: solid 2px;
             
             width: 50%; /* Takes up half the screen on desktop */
             margin: 0 auto; /* Center the element on desktop */
@@ -147,7 +147,7 @@ body {
     padding: 1em;
     line-height: 2em;
     font-size: 1.1em;
-            border: sold 2px;
+    border: solid 2px;
                         
                 width: 100%; /* Takes up the entire screen on mobile */
             
