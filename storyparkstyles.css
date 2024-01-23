@@ -1,7 +1,9 @@
+/* - page logo styling - */
+
 h1 {
     font-size: 36px;
     font-weight: 2000;
-    text-align: center;
+    margin: auto;
     font-family: courier;
 }
 
@@ -13,8 +15,11 @@ h1 {
 .undertext {
     font-size: 18px;
     font-weight: 350;
-    text-align: center;
+    margin: auto;
     font-family: courier;
+
+/* - story text styling - */
+    
 }
 
 .story-box {
@@ -31,7 +36,7 @@ font-family: courier, arial;
 padding: 30px;
 }
     
-
+/* - story title styling - */
 
 .story-title-box {
     border: solid 2px;
