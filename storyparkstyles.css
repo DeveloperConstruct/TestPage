@@ -135,6 +135,7 @@ body {
     line-height: 2em;
     font-size: 1.1em;
     border: solid 2px;
+    background-color: #FFFEF8;
             
             width: 50%; /* Takes up half the screen on desktop */
             margin: 0 auto; /* Center the element on desktop */
