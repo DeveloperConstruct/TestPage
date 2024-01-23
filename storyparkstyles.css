@@ -146,12 +146,12 @@ body {
             .test-element {
                         
     font-family: Cambria;
-    padding: 1em;
+    padding: 0;
     line-height: 2em;
     font-size: 1.1em;
     border: solid 2px;
                         
-    width: 100%; /* Takes up the entire screen on mobile */
+    width: 100%; 
             
                           }
                                             }            
