@@ -14,13 +14,13 @@ h1 {
     padding: auto;
     border: solid 5px;
     font-size: 14px;
-    width: 600px;
     margin: auto;
 }
 
 .story-title-box {
     border: solid 1px;
     margin: auto;
+    width: 400px;
 }
 
 .story-title-text {
