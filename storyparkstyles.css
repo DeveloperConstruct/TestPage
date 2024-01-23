@@ -3,13 +3,14 @@
 .page-logo-text-box-outer {
    width: 500px; 
    margin: auto;
+   font-family: 'Courier New', Courier;
 }
 
 .page-logo-text-inner {
     width: 400px;
     font-size: 36px;
     font-weight:bold;
-    margin: auto;
+    text-align: center;
     padding: 20px;
     
 }
@@ -17,6 +18,7 @@
 .logo-undertext {
     font-size: 18px;
     font-weight: lighter;
+    text-align: center;
 }
 
 
