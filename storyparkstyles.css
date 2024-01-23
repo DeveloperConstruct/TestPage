@@ -71,17 +71,17 @@
 
 .story-text-box-outer {
     margin: auto;
-    width: 700px;
+    width: 70em;
     border: solid 2px;
     border-radius: 5px;
     background-color: #FFFEF8;
-    padding: 15px;
+    padding: 4em;
 }
 
 .story-text-box-inner {
     margin: auto;
-    width: 500px;
-    padding:20px 20px;
+    width: 50em;
+    padding:4em 4em;
 }
 
 
