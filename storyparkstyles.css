@@ -1,52 +1,45 @@
 /* - page logo styling - */
 
-
-.page-logo-text-box {
-    margin: auto;
+.page-logo-text-outer {
+   width: 500px; 
+   margin:auto;
 }
 
-h1 {
+.page-logo-text-inner {
+    width: 400px;
     font-size: 36px;
-    font-weight: 2000;
+    font-weight:bold;
     margin: auto;
-    font-family: courier;
-}
-
-.undertext {
-    font-size: 18px;
-    font-weight: 350;
-    margin: auto;
-    font-family: courier;
-
-/* - story text styling - */
+    padding: 20px;
     
 }
 
-.story-box {
-    border: solid 5px;
+.logo-undertext {
     font-size: 18px;
-    line-height: 28px;
-    margin: auto;
-    width: 700px;
-    background-color: #F5F5DC;
-    font-family: courier, arial;
-
-.story-text {
-font-family: courier, arial;
-padding: 30px;
+    font-weight:lighter;
 }
-    
-/* - story title styling - */
+
+
+
+/* - titles styling for stories- */
+
+.full-story-content-box {
+    font-family: 'Courier New', Courier;
+    padding: 50px;
+}
 
 .story-title-box {
-    border: solid 2px;
-    background-color: #F5F5DC;
-    width: 600px;
+    margin: auto;
+    width: 500px;
 }
 
-.story-title-text {
-    font-weight: 350px;
-    text-align: center;
-    font-family: courier;
+.story-text-box-outer {
+    margin: auto;
+    width: 700px;
 }
 
+.story-text-box-inner {
+    margin: auto;
+    width: 500px;
+    padding:20px;
+}
