@@ -1,24 +1,22 @@
 /* - page logo styling - */
 
 .page-logo-text-box-outer {
-   width: 500px; 
+   width: 100% ; 
    margin: auto;
    font-family: 'Courier New', Courier;
+   text-align: center;
 }
 
 .page-logo-text-inner {
     width: 400px;
     font-size: 36px;
     font-weight:bold;
-    text-align: center;
-    padding: 20px;
     
 }
 
 .logo-undertext {
     font-size: 18px;
     font-weight: lighter;
-    text-align: center;
 }
 
 
