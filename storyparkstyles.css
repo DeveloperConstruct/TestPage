@@ -20,7 +20,9 @@
 
 
 
-/* - titles styling for Stories- */
+/* - Stories- */
+
+/*story title / author styling */
 
 .story-title-box {
     margin: auto;
@@ -37,10 +39,7 @@
    font-size: 10px;
 }
 
-
-
-
-
+/*story box styling */
 
 .full-story-content-box {
     font-family: 'Courier New', Courier;
