@@ -22,13 +22,14 @@
 
 /* - Stories- */
 
-/*story title / author styling */
+/*story Title / Author styling */
 
 .story-title-box {
     margin: auto;
     width: 500px;
     border: solid 2px;
     text-align: center;
+    letter-spacing: 20px;
 }
 
 .story-name {
