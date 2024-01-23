@@ -11,7 +11,7 @@ h1 {
 }
 
 .story-box {
-    margin: 1;
+    padding: auto;
     border: solid 5px;
     font-size: 14px;
     width: 600px;
@@ -23,7 +23,7 @@ h1 {
     font-weight: 350px;
     display: block;
     width: 600px;
-    padding: 20px;
+    padding: auto;
 }
 
 .story-text {
