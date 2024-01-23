@@ -31,13 +31,13 @@
 .story-title-box {
     margin: auto;
     width: 500px;
-    border: 2px;
+    border: solid 2px;
 }
 
 .story-text-box-outer {
     margin: auto;
     width: 700px;
-    border: 2px;
+    border: solid 2px;
 }
 
 .story-text-box-inner {
