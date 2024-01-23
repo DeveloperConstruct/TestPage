@@ -51,7 +51,7 @@
     margin: auto;
     width: 700px;
     border: solid 2px;
-    background-color: #FFFEF7;
+    background-color: #FFFEF8;
     padding: 20px;
 }
 
@@ -71,4 +71,10 @@
    width: 1px;
    margin: auto;
    
+}
+
+/* Global Page Settings */
+
+body {
+   background-color: #FFFEFB;
 }
