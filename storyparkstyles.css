@@ -15,10 +15,11 @@ h1 {
 .story-box {
     border: solid 5px;
     font-size: 18px;
-    line-height: 2px;
+    line-height: 3px;
     margin: auto;
     width: 600px;
     background-color: #F5F5DC;
+    font-family: courier, arial;
 }
 
 .story-title-box {
