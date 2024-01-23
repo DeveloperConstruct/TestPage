@@ -27,7 +27,8 @@ h1 {
     margin: auto;
     width: 400px;
     padding: 0 20px 0 0;
-     background-color: #F5F5DC;
+    background-color: #F5F5DC;
+    font-family: courier;
 }
 
 .story-title-text {
