@@ -2,9 +2,11 @@
 
 
 #logo-image-id {
-max-width: 400px;
-max-height: 300px;
-margin: 40px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
 }
 
 .page-logo-text-box-outer {
