@@ -1,5 +1,12 @@
 /* - page logo styling - */
 
+
+.logo-image {
+   margin: auto;
+   width: 500px;
+   height: 400px;
+}
+
 .page-logo-text-box-outer {
    width: 100% ; 
    margin: auto;
