@@ -24,9 +24,11 @@ h1 {
     display: block;
     width: 600px;
     padding: auto;
+    margin: auto;
 }
 
 .story-text {
 padding: 20px 30px 20px 20px;
 font-family: courier, arial;
+margin: auto;
 }
