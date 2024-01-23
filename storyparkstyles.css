@@ -11,8 +11,8 @@
 #logo-image-id {
             display: block;
             margin: auto;
-            max-width: 70vh;
-            max-width: 70vh;
+            max-width: 550vh;
+            max-width: 55vh;
 }
 
 .page-logo-text-box-outer {
@@ -25,7 +25,7 @@
 .page-logo-text-inner {
     font-size: 20px;
     font-weight:bold;
-    line-height: 5px;
+    line-height: 5vh;
     
 }
 
@@ -43,7 +43,8 @@
 
 .story-title-box {
     margin: auto;
-    width: 50vh;
+    max-width: 20vh;
+    max-width: auto;
     border: solid 2px;
     border-radius: 10px;
     text-align: center;
