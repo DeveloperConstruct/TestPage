@@ -13,7 +13,7 @@
             display: block;
             margin: auto;
             max-width: 45%;
-            max-width: auto;
+            max-height: auto;
 }
 
 /* - Text directly under the logo - */
@@ -24,7 +24,7 @@
    align-items: center;
 
             
-   width: 100% ; 
+   max-width: 100% ; 
    margin: 0;
    font-family: 'Courier New', Courier;
    text-align: center;
@@ -79,8 +79,8 @@
 
 .story-text-box-outer {
     margin: auto;
-    width: 50%;
-    height: auto;
+    max-width: 50%;
+    max-height: auto;
     border: solid 2px;
     border-radius: 5px;
     background-color: #FFFEF8;
@@ -89,8 +89,8 @@
 
 .story-text-box-inner {
     margin: auto;
-    width: 90%;
-    height: 90%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 
@@ -99,8 +99,8 @@
 
 .Vertical-Space-Div {
 
-   height: 30px;
-   width: 1px;
+   max-height: 30px;
+   max-width: 1px;
    margin: auto;
    
 }
