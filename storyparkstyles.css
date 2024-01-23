@@ -15,6 +15,7 @@ h1 {
     border: solid 5px;
     font-size: 14px;
     width: 600px;
+    margin: auto;
 }
 
 .story-title {
@@ -23,8 +24,7 @@ h1 {
     font-weight: 350px;
     display: block;
     width: 600px;
-    padding: auto;
-    margin: auto;
+    padding: 20px 10px;
 }
 
 .story-text {
