@@ -40,13 +40,12 @@ padding: 30px;
 
 .story-title-box {
     border: solid 2px;
-    width: 500px;
     background-color: #F5F5DC;
+    width: 600px;
 }
 
 .story-title-text {
     font-weight: 350px;
-    width: 600px;
     text-align: center;
     font-family: courier;
 }
