@@ -29,6 +29,19 @@
     text-align: center;
 }
 
+.story-name {
+   font-size: 16px;
+}
+
+.author-name {
+   font-size: 10px;
+}
+
+
+
+
+
+
 .full-story-content-box {
     font-family: 'Courier New', Courier;
     padding: 50px;
