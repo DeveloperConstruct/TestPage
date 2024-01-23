@@ -11,8 +11,8 @@
 #logo-image-id {
             display: block;
             margin: auto;
-            max-width: 30%;
-            max-height: 30%;
+            max-width: 20vh;
+            height: auto;
 }
 
 .page-logo-text-box-outer {
