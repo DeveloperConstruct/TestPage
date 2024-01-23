@@ -55,6 +55,7 @@
     border: solid 2px;
     border-radius: 10px;
     text-align: center;
+    text-spacing: 0.2em;
     line-height: 1em;
     font-family: 'Courier New', Courier;
 }
