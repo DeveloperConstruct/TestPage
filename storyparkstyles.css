@@ -22,3 +22,8 @@ h1 {
     margin: solid 5px;
     font-weight: 350px;
 }
+
+.story-text {
+padding: 10px;
+font-family: courier, arial;
+}
