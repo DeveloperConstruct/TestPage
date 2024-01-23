@@ -20,18 +20,19 @@
    margin: 20px;
    font-family: 'Courier New', Courier;
    text-align: center;
-   line-height: 15px;
 }
 
 .page-logo-text-inner {
     font-size: 20px;
     font-weight:bold;
+    line-height: 5px;
     
 }
 
 .logo-undertext {
     font-size: 16px;
     font-weight: lighter;
+    line-height: 5px;
 }
 
 
