@@ -5,11 +5,12 @@
    margin: auto;
    width: 500px;
    height: 400px;
+   overflow: hidden;
 }
 
 #logo-image-id {
-max-width: 500px;
-max-height: 400px;
+max-width: 100%;
+height: auto;
 }
 
 .page-logo-text-box-outer {
