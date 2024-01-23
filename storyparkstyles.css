@@ -22,16 +22,16 @@
 
 /* - titles styling for Stories- */
 
-.full-story-content-box {
-    font-family: 'Courier New', Courier;
-    padding: 50px;
-}
-
 .story-title-box {
     margin: auto;
     width: 500px;
     border: solid 2px;
     text-align: center;
+}
+
+.full-story-content-box {
+    font-family: 'Courier New', Courier;
+    padding: 50px;
 }
 
 .story-text-box-outer {
