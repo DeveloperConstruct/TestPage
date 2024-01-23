@@ -22,9 +22,15 @@ h1 {
     font-size: 18px;
     line-height: 28px;
     margin: auto;
-    width: 600px;
+    width: 700px;
     background-color: #F5F5DC;
     font-family: courier, arial;
+
+.story-text {
+font-family: courier, arial;
+padding: 30px;
+}
+    
 }
 
 .story-title-box {
@@ -37,13 +43,7 @@ h1 {
 
 .story-title-text {
     font-weight: 350px;
-    display: block;
     width: 600px;
     text-align: center;
-}
-
-.story-text {
-font-family: courier, arial;
-padding: 50px;
 }
 
