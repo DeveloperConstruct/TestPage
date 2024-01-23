@@ -32,18 +32,18 @@
     margin: auto;
     width: 500px;
     border: solid 2px;
-    padding: 10px 20px 0 0;
+    padding: 20px 20px;
 }
 
 .story-text-box-outer {
     margin: auto;
     width: 700px;
     border: solid 2px;
-    background-color: #FFFCED;
+    background-color: #FFFEF7;
 }
 
 .story-text-box-inner {
     margin: auto;
     width: 500px;
-    padding:20px;
+    padding:20px 20px;
 }
