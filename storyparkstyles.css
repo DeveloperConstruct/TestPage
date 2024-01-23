@@ -30,7 +30,7 @@
 }
 
 .logo-undertext {
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: lighter;
     line-height: 0.5em;
 }
@@ -43,12 +43,12 @@
 
 .story-title-box {
     margin: auto;
-    max-width: 3em;
+    max-width: 10em;
     max-height: auto;
     border: solid 2px;
     border-radius: 10px;
     text-align: center;
-    line-height: 0.5em;
+    line-height: 1em;
 }
 
 .story-name {
