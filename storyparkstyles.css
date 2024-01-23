@@ -15,6 +15,7 @@ h1 {
     border: solid 5px;
     font-size: 14px;
     margin: auto;
+    width: 600px;
 }
 
 .story-title-box {
