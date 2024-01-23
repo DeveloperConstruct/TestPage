@@ -1,13 +1,6 @@
 /* - page logo styling - */
 
 
-.logo-image {
-   margin: auto;
-   width: 500px;
-   height: 400px;
-   overflow: hidden;
-}
-
 #logo-image-id {
 max-width: 100%;
 height: auto;
