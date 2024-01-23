@@ -30,7 +30,7 @@ h1 {
 .story-title-box {
     border: solid 2px;
     margin: auto;
-    width: 400px;
+    width: 500px;
     background-color: #F5F5DC;
     font-family: courier;
 }
@@ -39,6 +39,7 @@ h1 {
     font-weight: 350px;
     display: block;
     width: 600px;
+    text-align: center;
 }
 
 .story-text {
