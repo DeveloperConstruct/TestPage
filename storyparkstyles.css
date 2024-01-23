@@ -85,13 +85,13 @@
     border: solid 2px;
     border-radius: 5px;
     background-color: #FFFEF8;
-    padding: 4em;
+    padding: 2em;
 }
 
 .story-text-box-inner {
     margin: auto;
     width: 90%;
-    padding:0.5em 0.5em;
+    height: 90%;
 }
 
 
