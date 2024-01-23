@@ -12,8 +12,8 @@
 #logo-image-id {
             display: block;
             margin: auto;
-            max-width: 550vh;
-            max-width: 55vh;
+            max-width: 50%;
+            max-width: auto;
 }
 
 .page-logo-text-box-outer {
