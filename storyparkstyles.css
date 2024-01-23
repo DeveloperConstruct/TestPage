@@ -7,6 +7,11 @@
    height: 400px;
 }
 
+#logo-image-id {
+max-width: 500px;
+max-height: 400px;
+}
+
 .page-logo-text-box-outer {
    width: 100% ; 
    margin: auto;
