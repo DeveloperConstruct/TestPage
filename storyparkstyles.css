@@ -23,16 +23,16 @@
 }
 
 .page-logo-text-inner {
-    font-size: 20em;
+    font-size: 1em;
     font-weight:bold;
-    line-height: 10em;
+    line-height: 0.5em;
     
 }
 
 .logo-undertext {
-    font-size: 16em;
+    font-size: 0.8em;
     font-weight: lighter;
-    line-height: 10vh;
+    line-height: 0.5em;
 }
 
 
@@ -43,30 +43,30 @@
 
 .story-title-box {
     margin: auto;
-    max-width: 40em;
+    max-width: 3em;
     max-height: auto;
     border: solid 2px;
     border-radius: 10px;
     text-align: center;
-    line-height: 10em;
+    line-height: 0.5em;
 }
 
 .story-name {
-   font-size: 10em;
+   font-size: 1em;
    font-weight: bold;
 }
 
 .author-name {
-   font-size: 10em;
+   font-size: 0.8em;
 }
 
 /*story box styling */
 
 .full-only-story-content-box {
     font-family: 'Courier New', Courier;
-    padding: 50em;
-    line-height: 20em;
-    font-size: 10em;
+    padding: 1em;
+    line-height: 1em;
+    font-size: 0.8em;
 }
 
 .story-text-box-outer {
