@@ -178,52 +178,9 @@ He then said that he has to be on his way out of this town by the morning light.
 
   
 
- <style>
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 1em 2em;
-      border: 2px solid black;
-      margin: 0 auto;
-      height: 900px;
-      width: 600px;
-      border-radius: 7px;
-      background-color: #FFFDF6;
-      font-family: Cambria, Arial;
-      font-size: 1.1em;
-    }
-
-    .page-number {
-      align-self: flex-end;
-      margin-top: auto;
-    }
-
-    #div1, #div2, #div3 {
-      flex: 1;
-    }
-
-    #div2, #div3 {
-      display: none;
-    }
-
-    button {
-      padding: 5px 10px;
-      margin: 0 100px;
-    }
-
-    .buttons-container {
-      display: flex;
-      justify-content: space-around;
-    }
-  </style>
-  <title>Toggle Divs</title>
-</head>
-<body>
-
 <div class="buttons-container">
-  <button onclick="toggleDiv('div1')"> < Previous Page </button>
-  <button onclick="toggleDiv('div2')"> Next Page > </button>
+  <button onclick="toggleDiv('prev')"> < Previous Page </button>
+  <button onclick="toggleDiv('next')"> Next Page > </button>
 </div>
 
 <div class="container">
@@ -254,22 +211,27 @@ He then said that he has to be on his way out of this town by the morning light.
   var div2 = document.getElementById('div2');
   var div3 = document.getElementById('div3');
 
-  function toggleDiv(showId) {
-    if (showId === 'div1') {
-      div1.style.display = 'block';
-      div2.style.display = 'none';
-      div3.style.display = 'none';
-    } else if (showId === 'div2') {
-      div1.style.display = 'none';
-      div2.style.display = 'block';
-      div3.style.display = 'none';
-    } else if (showId === 'div3') {
-      div1.style.display = 'none';
-      div2.style.display = 'none';
-      div3.style.display = 'block';
+  function toggleDiv(action) {
+    if (action === 'next') {
+      if (div1.style.display === 'block') {
+        div1.style.display = 'none';
+        div2.style.display = 'block';
+      } else if (div2.style.display === 'block') {
+        div2.style.display = 'none';
+        div3.style.display = 'block';
+      }
+    } else if (action === 'prev') {
+      if (div3.style.display === 'block') {
+        div3.style.display = 'none';
+        div2.style.display = 'block';
+      } else if (div2.style.display === 'block') {
+        div2.style.display = 'none';
+        div1.style.display = 'block';
+      }
     }
   }
 </script>
+
 
 
 
