@@ -125,7 +125,7 @@ body {
 
 footer {
             margin: auto;
-            font-family: Cambria, Courier;
-            font-size: 0.8em;
-            line-height: 2em;
+            font-family: Courier;
+            font-size: 1em;
+            line-height: 1.5em;
 }
