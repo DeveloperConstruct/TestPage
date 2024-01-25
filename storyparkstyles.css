@@ -123,37 +123,9 @@ body {
 }
 
 
-
-
-/* For testing */
-
-
-.test-element {
-
-    font-family: Cambria;
-    padding: 1em;
-    line-height: 2em;
-    font-size: 1.1em;
-    border: solid 2px;
-    background-color: #FFFEF8;
-            
-    width: 50%; /* Takes up half the screen on desktop */
-    margin: 0 auto; /* Center the element on desktop */
-            
+footer {
+            margin: auto;
+            font-family: Cambria, Courier;
+            font-size: 0.8em;
+            line-height: 2em;
 }
-
-  @media only screen and (max-width: 767px) {
-            .test-element {
-                        
-    font-family: Cambria;
-    padding: 0;
-    line-height: 2em;
-    font-size: 1.1em;
-    border: solid 3px;
-    border-radius: 10px;
-                        
-    width: 100%; 
-            
-                          }
-                                            }            
-
