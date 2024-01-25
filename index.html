@@ -169,36 +169,23 @@ He then said that he has to be on his way out of this town by the morning light.
 
   
   
-<style>
+
+  <style>
     body {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    #myToggleContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      max-width: 20em;
       padding: 10px;
       border: 1px solid #ccc;
     }
 
     #div1, #div2 {
       flex: 1;
-      max-width: 5em;
-      max-height: 7em;
-      text-align: center; /* Center text within divs */
     }
 
     #div2 {
@@ -219,16 +206,14 @@ He then said that he has to be on his way out of this town by the morning light.
 </head>
 <body>
 
-<div id="myToggleContainer">
-  <div class="buttons-container">
-    <button onclick="toggleDiv('div1')">Left Button</button>
-    <button onclick="toggleDiv('div2')">Right Button</button>
-  </div>
+<div class="buttons-container">
+  <button onclick="toggleDiv('div1')">Left Button</button>
+  <button onclick="toggleDiv('div2')">Right Button</button>
+</div>
 
-  <div class="container">
-    <div id="div1">This is the test text for div1</div>
-    <div id="div2">This is the test text for div2</div>
-  </div>
+<div class="container">
+  <div id="div1">This is the test text for div1</div>
+  <div id="div2">This is the test text for div2</div>
 </div>
 
 <script>
@@ -245,6 +230,7 @@ He then said that he has to be on his way out of this town by the morning light.
     }
   }
 </script>
+
 
 
 
