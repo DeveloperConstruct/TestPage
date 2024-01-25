@@ -50,7 +50,6 @@
 
 
     
-</body>
   
 
                                                     <div class="Vertical-Space-Div"> </div>
@@ -209,8 +208,26 @@
 
   
 
-// Function to toggle the visibility of website sections based on the selected section
-  
+
+  // Function to turn pages of the story
+  var currentPageIndex = 1;
+
+  function togglePage(direction) {
+    var pages = document.querySelectorAll('.page');
+    var totalPages = pages.length;
+
+    if (direction === 'next') {
+      currentPageIndex = (currentPageIndex % totalPages) + 1;
+    } else if (direction === 'prev') {
+      currentPageIndex = (currentPageIndex - 2 + totalPages) % totalPages + 1;
+    }
+
+    pages.forEach((page, index) => {
+      page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
+    });
+  }
+
+  // Function to toggle the visibility of website sections based on the selected section
   function toggleSectionVisibility(selectedSection) {
     // Get all website sections
     var websiteSections = document.querySelectorAll('[id^="WebsiteSection"]');
@@ -228,15 +245,18 @@
 
   // Attach event listeners to the buttons
   document.getElementById("ToggleSection1Button").addEventListener("click", function () {
-    toggleSectionVisibility(document.getElementById("WebsiteSection1"));
+    var section1 = document.getElementById("WebsiteSection1");
+    toggleSectionVisibility(section1);
   });
 
   document.getElementById("ToggleSection2Button").addEventListener("click", function () {
-    toggleSectionVisibility(document.getElementById("WebsiteSection2"));
+    var section2 = document.getElementById("WebsiteSection2");
+    toggleSectionVisibility(section2);
   });
 
   document.getElementById("ToggleSection3Button").addEventListener("click", function () {
-    toggleSectionVisibility(document.getElementById("WebsiteSection3"));
+    var section3 = document.getElementById("WebsiteSection3");
+    toggleSectionVisibility(section3);
   });
 
   // Add more buttons and event listeners as needed for additional sections
@@ -285,5 +305,5 @@
 
 
 
-  
+</body>
 </html>
