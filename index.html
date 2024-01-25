@@ -7,6 +7,13 @@
   </head>
 
 
+
+<div id="websiteSection1" class="section"> <!-- Div start for section switch test -->
+  <button onclick="toggleSection('websiteSection2')">Go to Section 2</button>
+
+
+
+  
   <body>
 
 
@@ -258,6 +265,21 @@ He then said that he has to be on his way out of this town by the morning light.
   <button id="button2" onclick="togglePage('next')">Next</button>
 </div>
 
+
+
+</div>  <!-- Div end for section switch test -->
+
+
+  <div id="websiteSection2" class="section">                                    <!-- Div start for section 2 (switch test) -->
+<button onclick="toggleSection('websiteSection1')">Go to Section 1</button>
+
+
+
+    
+  </div>     <!-- Div end for section 2 (switch test) -->
+
+  
+
 <script>
   var currentPageIndex = 1;
 
@@ -275,6 +297,34 @@ He then said that he has to be on his way out of this town by the morning light.
       page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
     });
   }
+
+
+
+
+
+
+
+
+  
+
+document.getElementById('websiteSection1').style.display = 'flex'; // Show the default section
+
+    function toggleSection(sectionId) {
+        var sections = document.querySelectorAll('.section');
+        
+        sections.forEach(function(section) {
+            section.style.display = 'none'; // Hide all sections
+        });
+
+        document.getElementById(sectionId).style.display = 'flex'; // Show the selected section
+    }
+
+
+
+
+
+
+  
 </script>
 
  
