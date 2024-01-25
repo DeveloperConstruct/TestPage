@@ -220,6 +220,27 @@ He then said that he has to be on his way out of this town by the morning light.
     margin-left: auto;
     margin-right: auto;
   }
+
+
+.section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            display: none;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+  
 </style>
 
 <!-- --------------------- Beginning of the page and button space --------------------- -->
@@ -318,7 +339,6 @@ document.getElementById('websiteSection1').style.display = 'flex'; // Show the d
 
         document.getElementById(sectionId).style.display = 'flex'; // Show the selected section
     }
-
 
 
 
