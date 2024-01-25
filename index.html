@@ -243,6 +243,7 @@ He then said that he has to be on his way out of this town by the morning light.
     <p class="page-number">1</p>
       
   </div>
+  
   <div id="div2">
     
   <p>This is the test text for div2</p>
@@ -252,21 +253,40 @@ He then said that he has to be on his way out of this town by the morning light.
   
   
   </div>
+
+<div id="div3">
+    
+  <p>This is the test text for div3</p>
+  <p>Div 3 test text is here.</p>
+  <p class="page-number">3</p>
+  
+  
+  </div>
+  
 </div>
 
 <script>
   var div1 = document.getElementById('div1');
   var div2 = document.getElementById('div2');
+  var div3 = document.getElementById('div3');
 
   function toggleDiv(showId) {
     if (showId === 'div1') {
       div1.style.display = 'block';
       div2.style.display = 'none';
+      div3.style.display = 'none';
+      
     } else if (showId === 'div2') {
       div1.style.display = 'none';
       div2.style.display = 'block';
-    }
+      div3.style.display = 'none';
+      
+    } else if (showId === 'div3') {
+      div1.style.display = 'none';
+      div2.style.display = 'none';
+      div3.style.display = 'block';
   }
+    
 </script>
 
   
