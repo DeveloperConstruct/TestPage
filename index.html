@@ -246,7 +246,6 @@ He then said that he has to be on his way out of this town by the morning light.
     <p>He didn't seem like he wanted to talk much but I couldn't not talk to someone...</p>
     <!-- Other paragraphs -->
     <div class="page-number">Page 3</div>
-    
   </div>
 </div>
 
@@ -256,9 +255,19 @@ He then said that he has to be on his way out of this town by the morning light.
   var div3 = document.getElementById('div3');
 
   function toggleDiv(showId) {
-    div1.style.display = showId === 'div1' ? 'block' : 'none';
-    div2.style.display = showId === 'div2' ? 'block' : 'none';
-    div3.style.display = showId === 'div3' ? 'block' : 'none';
+    if (showId === 'div1') {
+      div1.style.display = 'block';
+      div2.style.display = 'none';
+      div3.style.display = 'none';
+    } else if (showId === 'div2') {
+      div1.style.display = 'none';
+      div2.style.display = 'block';
+      div3.style.display = 'none';
+    } else if (showId === 'div3' && div2.style.display === 'block') {
+      div1.style.display = 'none';
+      div2.style.display = 'none';
+      div3.style.display = 'block';
+    }
   }
 </script>
 
