@@ -199,7 +199,8 @@
         websiteSection1.style.display = "block";
         websiteSection2.style.display = "none";
       } else {
-        // If WebsiteSection1 is visible, hide it and ensure WebsiteSection2 is visible
+        // If WebsiteSection1 is visible, hide everything within WebsiteSection1 and show WebsiteSection2
+        websiteSection1.innerHTML = ""; // This line clears the content within WebsiteSection1
         websiteSection1.style.display = "none";
         websiteSection2.style.display = "block";
       }
