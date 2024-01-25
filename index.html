@@ -160,5 +160,34 @@ He then said that he has to be on his way out of this town by the morning light.
 </footer>
 
          <div class="Vertical-Space-Div"> </div>
+
+
+<!-- Test Space -->
+
+  
+<div id="div1" class="content">
+  <p>Content of Div 1</p>
+  <button onclick="showDiv('div2')">Show Div 2</button>
+</div>
+
+<div id="div2" class="content">
+  <p>Content of Div 2</p>
+  <button onclick="showDiv('div1')">Show Div 1</button>
+</div>
+
+<script>
+  function showDiv(divId) {
+    var divToShow = document.getElementById(divId);
+    var divToHide = document.querySelector('.content:not(#' + divId + ')');
+
+    divToHide.style.display = 'none';
+    divToShow.style.display = 'block';
+  }
+</script>
+  
+
+
+
+
   
 </html>
