@@ -170,6 +170,11 @@ He then said that he has to be on his way out of this town by the morning light.
   
   
 <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
@@ -189,15 +194,24 @@ He then said that he has to be on his way out of this town by the morning light.
     button {
       padding: 5px 10px;
     }
+
+    .buttons-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
   </style>
   <title>Toggle Divs</title>
 </head>
 <body>
 
-<div class="container">
+<div class="buttons-container">
   <button onclick="toggleDiv()">Left Button</button>
-  <div id="div1">Content of Div 1</div>
   <button onclick="toggleDiv()">Right Button</button>
+</div>
+
+<div class="container">
+  <div id="div1">Content of Div 1</div>
   <div id="div2">Content of Div 2</div>
 </div>
 
@@ -210,7 +224,6 @@ He then said that he has to be on his way out of this town by the morning light.
     div2.style.display = div2.style.display === 'none' ? 'block' : 'none';
   }
 </script>
-
 
 
 
