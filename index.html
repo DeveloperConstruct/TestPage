@@ -189,14 +189,7 @@
 
   
 // Function to hide WebsiteSection1
-  function hideWebsiteSection() {
-    var websiteSection1 = document.getElementById("WebsiteSection1");
-    if (websiteSection1) {
-      websiteSection1.style.display = "none";
-    }
-  }
 
-  // Function to toggle the visibility of WebsiteSection1 and WebsiteSection2
   function toggleSections() {
     var websiteSection1 = document.getElementById("WebsiteSection1");
     var websiteSection2 = document.getElementById("WebsiteSection2");
@@ -207,7 +200,7 @@
         websiteSection1.style.display = "block";
         websiteSection2.style.display = "none";
       } else {
-        // If WebsiteSection1 is visible, hide it and show WebsiteSection2
+        // If WebsiteSection1 is visible, hide it and ensure WebsiteSection2 is visible
         websiteSection1.style.display = "none";
         websiteSection2.style.display = "block";
       }
