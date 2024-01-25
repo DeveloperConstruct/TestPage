@@ -174,76 +174,56 @@ He then said that he has to be on his way out of this town by the morning light.
       padding: 1em 2em;
       border: 2px solid black;
       margin: 0 auto;
-      height: 900px;
-      width: 600px;
+      height: 300px;
+      width: 400px;
       border-radius: 7px;
       background-color: #FFFDF6;
       font-family: Cambria, Arial;
       font-size: 1.1em;
     }
 
-    .page-number {
-      align-self: flex-end;
-      margin-top: auto;
-    }
-
     #div1, #div2, #div3 {
       flex: 1;
+      display: none;
     }
 
-    #div2, #div3 {
-      display: none;
+    #div1 {
+      display: block;
     }
 
     button {
       padding: 5px 10px;
-      margin: 0 100px;
+      margin: 0 10px;
     }
 
-    .buttons-container {
-      display: flex;
-      justify-content: space-around;
+    #button1, #button2 {
+      cursor: pointer;
     }
   </style>
-
-  
-
-  <div class="story-title-box">
-
-      <p class="story-name">Page Turning Test (BW C1)</p>
-
-      <p class="author-name">Written by: Val G</p>
-
-        </div>
-
-  
-
-<div class="buttons-container">
-  <button onclick="toggleDiv('prev')"> < Previous Page </button>
-  <button onclick="toggleDiv('next')"> Next Page > </button>
-</div>
+  <title>Toggle Divs</title>
+</head>
+<body>
 
 <div class="container">
   <div id="div1">
     <!-- Content of div1 -->
-    <p>It was the dead of night and I was riding in a wagon...</p>
-    <!-- Other paragraphs -->
-    <div class="page-number">Page 1</div>
+    <p>This is the content of div1.</p>
   </div>
   
   <div id="div2">
     <!-- Content of div2 -->
-    <p>As I sat at the bar, I thought about my father...</p>
-    <!-- Other paragraphs -->
-    <div class="page-number">Page 2</div>
+    <p>This is the content of div2.</p>
   </div>
 
   <div id="div3">
     <!-- Content of div3 -->
-    <p>He didn't seem like he wanted to talk much but I couldn't not talk to someone...</p>
-    <!-- Other paragraphs -->
-    <div class="page-number">Page 3</div>
+    <p>This is the content of div3.</p>
   </div>
+</div>
+
+<div>
+  <button id="button1" onclick="toggleDiv('prev')"> < Previous Page </button>
+  <button id="button2" onclick="toggleDiv('next')"> Next Page > </button>
 </div>
 
 <script>
@@ -271,7 +251,6 @@ He then said that he has to be on his way out of this town by the morning light.
     }
   }
 </script>
-
 
 
 
