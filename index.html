@@ -179,6 +179,12 @@ He then said that he has to be on his way out of this town by the morning light.
       min-height: 100vh;
     }
 
+    #myToggleContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
@@ -213,14 +219,16 @@ He then said that he has to be on his way out of this town by the morning light.
 </head>
 <body>
 
-<div class="buttons-container">
-  <button onclick="toggleDiv('div1')">Left Button</button>
-  <button onclick="toggleDiv('div2')">Right Button</button>
-</div>
+<div id="myToggleContainer">
+  <div class="buttons-container">
+    <button onclick="toggleDiv('div1')">Left Button</button>
+    <button onclick="toggleDiv('div2')">Right Button</button>
+  </div>
 
-<div class="container">
-  <div id="div1">This is the test text for div1</div>
-  <div id="div2">This is the test text for div2</div>
+  <div class="container">
+    <div id="div1">This is the test text for div1</div>
+    <div id="div2">This is the test text for div2</div>
+  </div>
 </div>
 
 <script>
@@ -237,6 +245,7 @@ He then said that he has to be on his way out of this town by the morning light.
     }
   }
 </script>
+
 
 
 
