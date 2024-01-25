@@ -32,6 +32,10 @@
 
 <!-- Place for Website Section Buttons - Start-->
 
+<button id="ToggleSection1Button" style="width: 50px; height: 70px;">Toggle Section 1</button>
+<button id="ToggleSection2Button" style="width: 50px; height: 70px;">Toggle Section 2</button>
+<button id="ToggleSection3Button" style="width: 50px; height: 70px;">Toggle Section 3</button>
+    
 <!-- Place for Website Section Buttons - End -->
     
     
@@ -168,6 +172,10 @@
   
 
 <script>
+
+
+  // Function to turn pages of the story
+  
   var currentPageIndex = 1;
 
   function togglePage(direction) {
@@ -187,8 +195,44 @@
 
 
 
+
   
 
+// Function to toggle the visibility of website sections based on the selected section
+  
+  function toggleSectionVisibility(selectedSection) {
+    // Get all website sections
+    var websiteSections = document.querySelectorAll('[id^="WebsiteSection"]');
+    
+    // Hide all sections
+    websiteSections.forEach(function (section) {
+      section.style.display = "none";
+    });
+
+    // Show the selected section
+    if (selectedSection) {
+      selectedSection.style.display = "block";
+    }
+  }
+
+  // Attach event listeners to the buttons
+  document.getElementById("ToggleSection1Button").addEventListener("click", function () {
+    toggleSectionVisibility(document.getElementById("WebsiteSection1"));
+  });
+
+  document.getElementById("ToggleSection2Button").addEventListener("click", function () {
+    toggleSectionVisibility(document.getElementById("WebsiteSection2"));
+  });
+
+  document.getElementById("ToggleSection3Button").addEventListener("click", function () {
+    toggleSectionVisibility(document.getElementById("WebsiteSection3"));
+  });
+
+  // Add more buttons and event listeners as needed for additional sections
+  
+
+
+  
   
 </script>
 
@@ -203,11 +247,11 @@
 
 <p>Website section 2 test text</p>
   
-<</div> <!-- Website Section *2* - End -->
+</div> <!-- Website Section *2* - End -->
 
 <div id="WebsiteSection3">                     <!-- Website Section *3* - Start -->
 
-<p>Website section 3 test text</p>
+<p>And the website section 3 test text</p>
   
 </div>                                          <!-- Website Section *3* - End -->
   
