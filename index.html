@@ -32,7 +32,7 @@
 
 <!-- Adds the Hide and Unhide buttons -->
 <button id="HideWebsiteSection1" onclick="hideWebsiteSection()">Author 2</button>
-<button id="UnhideWebsiteSection1" onclick="unhideWebsiteSection()">Val G</button>
+<button id="UnhideWebsiteSection1" onclick="toggleSections()">Val G</button>
     
     
 
@@ -182,19 +182,35 @@
   }
 
 
-<!-- Script for Website section hiding and unhiding buttons -->
+
   
-function hideWebsiteSection() {
+<!-- Script for Website section hiding and unhiding buttons -->
+
+
+  
+// Function to hide WebsiteSection1
+  function hideWebsiteSection() {
     var websiteSection1 = document.getElementById("WebsiteSection1");
     if (websiteSection1) {
       websiteSection1.style.display = "none";
     }
   }
 
-  function unhideWebsiteSection() {
+  // Function to toggle the visibility of WebsiteSection1 and WebsiteSection2
+  function toggleSections() {
     var websiteSection1 = document.getElementById("WebsiteSection1");
-    if (websiteSection1) {
-      websiteSection1.style.display = "block";
+    var websiteSection2 = document.getElementById("WebsiteSection2");
+
+    if (websiteSection1 && websiteSection2) {
+      if (websiteSection1.style.display === "none") {
+        // If WebsiteSection1 is hidden, show it and hide WebsiteSection2
+        websiteSection1.style.display = "block";
+        websiteSection2.style.display = "none";
+      } else {
+        // If WebsiteSection1 is visible, hide it and show WebsiteSection2
+        websiteSection1.style.display = "none";
+        websiteSection2.style.display = "block";
+      }
     }
   }
   
