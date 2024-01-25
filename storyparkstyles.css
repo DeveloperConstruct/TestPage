@@ -124,8 +124,8 @@ body {
 
 
 footer {
-            margin: 0 auto 0 auto;
             font-family: Courier;
             font-size: 1em;
             line-height: 1.5em;
+            padding: 3em auto 3em auto;
 }
