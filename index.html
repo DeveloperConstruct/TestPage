@@ -28,6 +28,15 @@
 </div>
 
 <div class="Vertical-Space-Div"> </div>
+
+
+!-- Add the Hide and Unhide buttons -->
+<button id="HideWebsiteSection1" onclick="hideWebsiteSection()">Hide Section 1</button>
+<button id="UnhideWebsiteSection1" onclick="unhideWebsiteSection()">Unhide Section 1</button>
+    
+    
+
+<div id="WebsiteSection1" >
     
 
      <div class="full-only-story-content-box">
@@ -268,7 +277,7 @@ He then said that he has to be on his way out of this town by the morning light.
     <p>This is the div4 test text.</p>
   </div>
 
-   <div id="pagediv4" class="page">
+   <div id="pagediv5" class="page">
     
     <!-- Page 5 Div Element -->
     <p>This is the div5 test text.</p>
@@ -303,8 +312,22 @@ He then said that he has to be on his way out of this town by the morning light.
   }
 
 
+<!-- Script for Website section hiding and unhiding buttons -->
+  
+function hideWebsiteSection() {
+    var websiteSection1 = document.getElementById("WebsiteSection1");
+    if (websiteSection1) {
+      websiteSection1.style.display = "none";
+    }
+  }
 
-
+  function unhideWebsiteSection() {
+    var websiteSection1 = document.getElementById("WebsiteSection1");
+    if (websiteSection1) {
+      websiteSection1.style.display = "block";
+    }
+  }
+  
 
   
 </script>
@@ -314,6 +337,7 @@ He then said that he has to be on his way out of this town by the morning light.
 
 
 
+</div>
 
   
   
