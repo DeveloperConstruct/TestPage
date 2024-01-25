@@ -174,18 +174,27 @@ He then said that he has to be on his way out of this town by the morning light.
     body {
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 700px;
       padding: 10px;
       border: 1px solid #ccc;
     }
 
     #div1, #div2 {
       flex: 1;
+      width: 350px; /* Half of the max-width */
+      max-width: 100%;
+      max-height: 1000px;
+      text-align: center;
     }
 
     #div2 {
