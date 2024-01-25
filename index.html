@@ -5,230 +5,93 @@
     <title>Storypark!</title>
     <link rel="stylesheet" href="storyparkstyles.css" />
 </head>
-
 <body>
 
-    <!-- Storypark logo image -->
-    <div class="logo-image-case">
-        <img id="logo-image-id" src="https://i.imgur.com/xc7GsQq.png" alt="Storypark logo">
+<!-- Storypark logo image -->
+<div class="logo-image-case">
+    <img id="logo-image-id" src="https://i.imgur.com/xc7GsQq.png" alt="Storypark logo">
+</div>
+
+<div class="page-logo-text-box-outer">
+
+    <div class="page-logo-text-box-inner">
+        <h1 class="logo-text"><!-- h1 empty for now --></h1>
+        <p class="logo-undertext">Storypark - home for everyone's short and feature stories!</p>
     </div>
 
-    <div class="page-logo-text-box-outer">
-        <div class="page-logo-text-box-inner">
-            <h1 class="logo-text"><!-- h1 empty for now --></h1>
-            <p class="logo-undertext">Storypark - home for everyone's short and feature stories!</p>
-        </div>
-    </div>
+</div>
 
-    <div class="Vertical-Space-Div"> </div>
+<div class="Vertical-Space-Div"> </div>
 
-
-
-
-
-
-    
-    <!-- Place for Website Section Buttons - Start-->
-
-    <div id="WebsiteSectionSelectionButtonCase">
-    
+<!-- Place for Website Section Buttons - Start-->
+<div id="WebsiteSectionSelectionButtonCase">
     <button id="ToggleSection1Button" onclick="toggleSectionVisibility('WebsiteSection1')">Author 1</button>
     <button id="ToggleSection2Button" onclick="toggleSectionVisibility('WebsiteSection2')">Author 2</button>
     <button id="ToggleSection3Button" onclick="toggleSectionVisibility('WebsiteSection3')">Author 3</button>
     <!-- Add more buttons as needed -->
-    
+</div>
+<!-- Place for Website Section Buttons - End -->
+
+<!-- --------------------- Beginning of the page and button space --------------------- -->
+<div class="page-container">
+    <button id="button1" onclick="togglePage('prev')">Previous</button>
+    <div id="pagediv1" class="page">
+        <!-- Page 1 Div Element -->
+        <p><b>I</b>t was the dead of night and I was riding in a wagon to an unknown location in the woods with someone I had met about an hour ago. All because I really need some money…</p>
+        <!-- More content from Page 1 -->
     </div>
-    
-    <!-- Place for Website Section Buttons - End -->
 
+    <div id="pagediv2" class="page">
+        <!-- Page 2 Div Element -->
+        <p>I spent my last money on a drink that I sipped while thinking about how I should have stayed out of this place and never picked up cards in my life. The saloon was as busy as ever late in the evening and an indistinct loud chatter filled the entire floor. People smoking and drinking. Some about to fight, some downed, already losers in past fight</p>
+        <!-- More content from Page 2 -->
+    </div>
 
+    <div id="pagediv3" class="page">
+        <!-- Page 3 Div Element -->
+        <p>He didn't say anything at first, but I felt like having a chat with someone. I inquired about where he was from because to me he didn’t look like a local. I’d never seen him before. He put down his glass and told me his name was George. I asked if he was from here. He signed "no". "Somerton." George said in a dry tone.</p>
+        <!-- More content from Page 3 -->
+    </div>
 
+    <div id="pagediv4" class="page">
+        <!-- Page 4 Div Element -->
+        <p>This is the div4 test text.</p>
+    </div>
 
-    
-    <div id="WebsiteSection1"> <!-- Website Section 1 - Start -->
+    <div id="pagediv5" class="page">
+        <!-- Page 5 Div Element -->
+        <p>This is the div5 test text.</p>
+    </div>
 
-        <div class="Vertical-Space-Div"> </div>
-        <div class="Vertical-Space-Div"> </div>
+    <!-- Add more div elements as needed -->
+    <button id="button2" onclick="togglePage('next')">Next</button>
+</div>
 
-        <!-- Test Space -->
-        <div class="story-title-box">
-            <p class="story-name">Page Turning Test</p>
-            <p class="author-name">Written by: Val G</p>
-        </div>
+<script>
+    var currentPageIndex = 1;
 
-        <style>
-            .page-container {
-                display: flex;
-                justify-content: space-between;
-            }
+    function togglePage(direction) {
+        var pages = document.querySelectorAll('.page');
+        var totalPages = pages.length;
 
-            .page {
-                width: 500px;
-                height: 700px;
-                border: 2px solid black;
-                display: none;
-                border-radius: 7px;
-                background-color: #FFFDF6;
-                padding: 1.5em;
-                font-sizing: 1.1em;
-                font-family: Cambria, arial;
-            }
-
-            #pagediv1 {
-                display: block;
-            }
-
-            button {
-                padding: 10px;
-                height: 30px;
-                width: 100px;
-                text-align: center;
-                font-family: courier;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-
-
-        #WebsiteSectionSelectionButtonCase {
-
-        margin: 30px auto;
-            
+        if (direction === 'next') {
+            currentPageIndex = (currentPageIndex % totalPages) + 1;
+        } else if (direction === 'prev') {
+            currentPageIndex = (currentPageIndex - 2 + totalPages) % totalPages + 1;
         }
 
-        #ToggleSection1Button, ToggleSection2Button, ToggleSection3Button {
-
-        height: 30px;
-        width: 100px;
-        margin: 30px auto;
-        text-align: center;
-            
-        }
-
-
-            
-        </style>
-
-        <!-- Beginning of the page and button space -->
-        <div class="page-container">
-            <button id="button1" onclick="togglePage('prev')">Previous</button>
-            <div id="pagediv1" class="page">
-
-                <!-- Page 1 Div Element -->
-                <p><b>I</b>t was the dead of night and I was riding in a wagon to an unknown location in the woods with someone I had met about an hour ago. All because I really need some money…</p>
-                <!-- More content from Page 1 -->
-            </div>
-
-            <div id="pagediv2" class="page">
-
-                <!-- Page 2 Div Element -->
-                <p>I spent my last money on a drink that I sipped while thinking about how I should have stayed out of this place and never picked up cards in my life. The saloon was as busy as ever late in the evening and an indistinct loud chatter filled the entire floor. People smoking and drinking. Some about to fight, some downed, already losers in past fight</p>
-                <!-- More content from Page 2 -->
-            </div>
-
-            <div id="pagediv3" class="page">
-
-                <!-- Page 3 Div Element -->
-                <p>He didn't say anything at first, but I felt like having a chat with someone. I inquired about where he was from because to me he didn’t look like a local. I’d never seen him before. He put down his glass and told me his name was George. I asked if he was from here. He signed "no". "Somerton." George said in a dry tone.</p>
-                <!-- More content from Page 3 -->
-            </div>
-
-            <div id="pagediv4" class="page">
-
-                <!-- Page 4 Div Element -->
-                <p>This is the div4 test text.</p>
-            </div>
-
-            <div id="pagediv5" class="page">
-
-                <!-- Page 5 Div Element -->
-                <p>This is the div5 test text.</p>
-            </div>
-
-            <!-- Add more div elements as needed -->
-
-            <button id="button2" onclick="togglePage('next')">Next</button>
-        </div>
-
-        <script>
-
-
-            
-            var currentPageIndex = 1;
-
-            function togglePage(direction) {
-                var pages = document.querySelectorAll('.page');
-                var totalPages = pages.length;
-
-                if (direction === 'next') {
-                    currentPageIndex = (currentPageIndex % totalPages) + 1;
-                } else if (direction === 'prev') {
-                    currentPageIndex = (currentPageIndex - 2 + totalPages) % totalPages + 1;
-                }
-
-                pages.forEach((page, index) => {
-                    page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
-                });
-            }
-
-
-
-
-
-            // Function to toggle the visibility of website sections based on the selected section
-    function toggleSectionVisibility(selectedSection) {
-        // Get all website sections
-        var websiteSections = document.querySelectorAll('[id^="WebsiteSection"]');
-        
-        // Hide all sections
-        websiteSections.forEach(function (section) {
-            section.style.display = "none";
+        pages.forEach((page, index) => {
+            page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
         });
-
-        // Show the selected section
-        if (selectedSection) {
-            selectedSection.style.display = "block";
-        }
     }
 
-    // Attach event listeners to the buttons
-    document.getElementById("ToggleSection1Button").addEventListener("click", function () {
-        toggleSectionVisibility(document.getElementById("WebsiteSection1"));
-    });
+    function toggleSectionVisibility(selectedSection) {
+        var websiteSections = document.querySelectorAll('[id^="WebsiteSection"]');
+        websiteSections.forEach(function (section) {
+            section.style.display = section.id === selectedSection ? 'block' : 'none';
+        });
+    }
+</script>
 
-    document.getElementById("ToggleSection2Button").addEventListener("click", function () {
-        toggleSectionVisibility(document.getElementById("WebsiteSection2"));
-    });
-
-    document.getElementById("ToggleSection3Button").addEventListener("click", function () {
-        toggleSectionVisibility(document.getElementById("WebsiteSection3"));
-    });
-
-    // Add more buttons and event listeners as needed for additional sections
-
-
-
-
-
-
-            
-        </script>
-
-        <!-- Test Space End -->
-
-    </div> <!-- Website Section 1 - End -->
-
-    <div id="WebsiteSection2"> <!-- Website Section 2 - Start -->
-
-        <p>Website section 2 test text</p>
-
-    </div> <!-- Website Section 2 - End -->
-
-    <div id="WebsiteSection3"> <!-- Website Section 3 - Start -->
-
-        <p>And the website section 3 test text</p>
-
-    </div> <!-- Website Section 3 - End -->
-
-        </body>
+</body>
 </html>
