@@ -22,10 +22,29 @@
 
     <div class="Vertical-Space-Div"> </div>
 
+
+
+
+
+
+    
     <!-- Place for Website Section Buttons - Start-->
 
+    div id="WebsiteSectionSelectionButtonCase">
+    
+    <button id="ToggleSection1Button" onclick="toggleSectionVisibility('WebsiteSection1')">Author 1</button>
+    <button id="ToggleSection2Button" onclick="toggleSectionVisibility('WebsiteSection2')">Author 2</button>
+    <button id="ToggleSection3Button" onclick="toggleSectionVisibility('WebsiteSection3')">Author 3</button>
+    <!-- Add more buttons as needed -->
+    
+    </div>
+    
     <!-- Place for Website Section Buttons - End -->
 
+
+
+
+    
     <div id="WebsiteSection1"> <!-- Website Section 1 - Start -->
 
         <div class="Vertical-Space-Div"> </div>
@@ -119,6 +138,9 @@
         </div>
 
         <script>
+
+
+            
             var currentPageIndex = 1;
 
             function togglePage(direction) {
@@ -135,6 +157,48 @@
                     page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
                 });
             }
+
+
+
+
+
+            // Function to toggle the visibility of website sections based on the selected section
+    function toggleSectionVisibility(selectedSection) {
+        // Get all website sections
+        var websiteSections = document.querySelectorAll('[id^="WebsiteSection"]');
+        
+        // Hide all sections
+        websiteSections.forEach(function (section) {
+            section.style.display = "none";
+        });
+
+        // Show the selected section
+        if (selectedSection) {
+            selectedSection.style.display = "block";
+        }
+    }
+
+    // Attach event listeners to the buttons
+    document.getElementById("ToggleSection1Button").addEventListener("click", function () {
+        toggleSectionVisibility(document.getElementById("WebsiteSection1"));
+    });
+
+    document.getElementById("ToggleSection2Button").addEventListener("click", function () {
+        toggleSectionVisibility(document.getElementById("WebsiteSection2"));
+    });
+
+    document.getElementById("ToggleSection3Button").addEventListener("click", function () {
+        toggleSectionVisibility(document.getElementById("WebsiteSection3"));
+    });
+
+    // Add more buttons and event listeners as needed for additional sections
+
+
+
+
+
+
+            
         </script>
 
         <!-- Test Space End -->
