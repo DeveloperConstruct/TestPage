@@ -74,7 +74,7 @@
   
   
 <style>
-  .page-container {
+  .page-container1 {
     display: flex;
     justify-content: space-between;
   }
@@ -154,9 +154,9 @@
 <!-- --------------------- Beginning of the page and button space --------------------- -->
 
   
-<div class="page-container">
+<div class="page-container1">
   <button id="button1" onclick="togglePage('prev')">Previous</button>
-  <div id="pagediv1" class="page">
+  <div id="pagediv1" class="page1">
     
     <!-- Page 1 Div Element -->
     <p><b>I</b>t was the dead of night and I was riding in a wagon to an unknown location in the woods with someone I had met about an hour ago. All because I really need some money…</p>
@@ -203,7 +203,7 @@
   var currentPageIndex = 1;
 
   function togglePage(direction) {
-    var pages = document.querySelectorAll('.page');
+    var pages = document.querySelectorAll('.page1');
     var totalPages = pages.length;
 
     if (direction === 'next') {
@@ -227,7 +227,7 @@
 var currentPageIndex = 1;
 
         function togglePage(direction) {
-            var pages = document.querySelectorAll('.page');
+            var pages = document.querySelectorAll('.page1');
             var totalPages = pages.length;
 
             if (direction === 'next') {
