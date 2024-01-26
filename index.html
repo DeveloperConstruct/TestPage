@@ -32,9 +32,9 @@
 
 <!-- Place for Website Section Buttons - Start-->
 
-<button id="ToggleSection1Button">Author 1</button>
-<button id="ToggleSection2Button">Author 2</button>
-<button id="ToggleSection3Button">Author 3</button>
+<button id="ToggleSection1Button" class="author-button">Author 1</button>
+<button id="ToggleSection2Button" class="author-button">Author 2</button>
+<button id="ToggleSection3Button" class="author-button">Author 3</button>
     
 <!-- Place for Website Section Buttons - End -->
     
@@ -46,7 +46,7 @@
 
 
     
-</body>
+
   
 
                                                     <div class="Vertical-Space-Div"> </div>
@@ -115,6 +115,14 @@
         }
 
 
+
+  .author-button {
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    font-family: courier;
+    margin: 10px auto auto 10px;
+  }
 
 
 
@@ -197,44 +205,36 @@
 
 
 
-  function toggleSection(sectionId) {
-    var sections = document.querySelectorAll('[id^="WebsiteSection"]');
-    
-    sections.forEach((section) => {
-      section.style.display = section.id === sectionId ? 'block' : 'none';
-    });
-  }
+    document.addEventListener('DOMContentLoaded', function () {
+    function toggleSection(sectionId) {
+      var sections = document.querySelectorAll('[id^="WebsiteSection"]');
+      
+      sections.forEach((section) => {
+        section.style.display = section.id === sectionId ? 'block' : 'none';
+      });
+    }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    // Array of author buttons and corresponding section IDs
-    var authorButtons = [
-      { buttonId: 'ToggleSection1Button', sectionId: 'WebsiteSection1', buttonText: 'Author 1' },
-      { buttonId: 'ToggleSection2Button', sectionId: 'WebsiteSection2', buttonText: 'Author 2' },
-      { buttonId: 'ToggleSection3Button', sectionId: 'WebsiteSection3', buttonText: 'Author 3' },
-      // Add more buttons and sections as needed
-      // { buttonId: 'ToggleSection4Button', sectionId: 'WebsiteSection4', buttonText: 'Author 4' },
-      // { buttonId: 'ToggleSection5Button', sectionId: 'WebsiteSection5', buttonText: 'Author 5' },
-      // ...
-    ];
-
-    // Dynamically create and set up event listeners for each button
-    authorButtons.forEach((authorButton) => {
-      var button = document.getElementById(authorButton.buttonId);
+    function setupAuthorButton(buttonId, sectionId) {
+      var button = document.getElementById(buttonId);
 
       if (button) {
         button.addEventListener('click', function () {
-          toggleSection(authorButton.sectionId);
+          toggleSection(sectionId);
         });
-        button.textContent = authorButton.buttonText;
-        button.style.height = '30px';
-        button.style.width = '90px';
-        button.style.textAlign = 'center';
-        button.style.fontFamily = 'courier';
-        button.style.margin = '10px auto auto 10px';
       }
-    });
+    }
+
+    // Set up buttons for existing sections
+    setupAuthorButton('ToggleSection1Button', 'WebsiteSection1');
+    setupAuthorButton('ToggleSection2Button', 'WebsiteSection2');
+    setupAuthorButton('ToggleSection3Button', 'WebsiteSection3');
+
+    // Add more buttons and sections as needed
+    // setupAuthorButton('ToggleSection4Button', 'WebsiteSection4');
+    // setupAuthorButton('ToggleSection5Button', 'WebsiteSection5');
+    // ...
+
   });
-  
   
 
   
@@ -258,5 +258,7 @@
 <p>And the website section 3 test text</p>
   
 </div>                                          <!-- Website Section *3* - End -->
-  
+
+
+</body>
 </html>
