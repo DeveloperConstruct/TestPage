@@ -37,6 +37,7 @@
 <button id="ToggleSection1Button" class="author-button">Author 1</button>
 <button id="ToggleSection2Button" class="author-button">Author 2</button>
 <button id="ToggleSection3Button" class="author-button">Author 3</button>
+<button id="ToggleSection4Button" class="author-button">Author 4</button>
     
   </div>
     
@@ -184,7 +185,15 @@
 
 
 
+<div id="WebsiteSection4" >
+<p>Section 4 test text</p>
+</div>
 
+    
+
+                                                  <!-- Scripts and Styles --->
+
+    
 
 <script>
   var currentPageIndex = 1;
@@ -228,6 +237,11 @@ var currentPageIndex = 1;
             });
         }
 
+
+
+
+
+  
         function toggleSection(sectionId) {
             var sections = document.querySelectorAll('[id^="WebsiteSection"]');
             
@@ -251,6 +265,7 @@ var currentPageIndex = 1;
             setupAuthorButton('ToggleSection1Button', 'WebsiteSection1');
             setupAuthorButton('ToggleSection2Button', 'WebsiteSection2');
             setupAuthorButton('ToggleSection3Button', 'WebsiteSection3');
+            setupAuthorButton('ToggleSection4Button', 'WebsiteSection4');
 
             // Add more buttons and sections as needed
             // setupAuthorButton('ToggleSection4Button', 'WebsiteSection4');
