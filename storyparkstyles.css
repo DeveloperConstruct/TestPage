@@ -107,26 +107,11 @@
    
 }
 
-.Vertical-Space-Div-2 {
 
-   max-height: 10px;
-   max-width: 1px;
-   margin: auto;
-   
-}
 
 /* Global Page Settings */
 
 body {
-   background-color: #FFFEFB;
+   background-color: #FAFAFA;
    overflow-x: hidden;
-}
-
-
-footer {
-            font-family: Courier;
-            font-size: 1em;
-            line-height: 1.5em;
-            margin: 0 auto;
-            text-align: center;
 }
