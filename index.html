@@ -71,12 +71,12 @@
   
 <style>
   
-  .page-container {
+ .page-container {
         display: flex;
-        justify-content: center; /* Center horizontally */
+        justify-content: space-between; /* Distribute items evenly along the main axis */
         align-items: center; /* Center vertically */
         flex-direction: column; /* Stack buttons vertically */
-    }
+ }
 
   .page {
     width: 500px;
@@ -135,7 +135,15 @@
 }
 
 
-      
+.navigation-buttons {
+        display: flex;
+        justify-content: space-between; /* Distribute items evenly along the main axis */
+        width: 100%;
+        margin-bottom: 10px; /* Add some spacing between navigation buttons and author buttons */
+    }
+
+
+  
   
 </style>
 
