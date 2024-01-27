@@ -83,8 +83,6 @@
     <button id="NextButtonPage3" class="next-button" onclick="togglePage('next', 3)">Next</button>
 </div>
 
-<!-- Add more systems as needed -->
-
 
 
   
@@ -318,12 +316,17 @@ var currentPageIndex = 1;
 
 
 
-function togglePage(direction, systemNumber) {
+document.addEventListener('DOMContentLoaded', function () {
+        // Show the first box initially
+        document.getElementById('FippableAuthorContentBox1').style.display = 'block';
+    });
+
+    function togglePage(direction, systemNumber) {
         var currentBox = document.getElementById('FippableAuthorContentBox' + systemNumber);
         var nextBoxNumber = (direction === 'next') ? systemNumber + 1 : systemNumber - 1;
         var nextBox = document.getElementById('FippableAuthorContentBox' + nextBoxNumber);
 
-        if (nextBox) {
+        if (currentBox && nextBox) {
             currentBox.style.display = 'none';
             nextBox.style.display = 'block';
         }
@@ -462,7 +465,29 @@ function togglePage(direction, systemNumber) {
   }
 
   
-      
+
+
+<!--- For the flipping system test --->
+
+
+
+.fippable-author-content-box {
+        width: 500px;
+        height: 700px;
+        margin: 0 auto;
+        display: none;
+    }
+
+    .previous-button,
+    .next-button {
+        height: 30px;
+        width: 90px;
+        text-align: center;
+        font-family: courier;
+        margin: 10px;
+
+
+  
   
 </style>
     
