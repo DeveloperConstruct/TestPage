@@ -93,8 +93,8 @@
 
   
 <div class="page-container">
-  <button id="button1" onclick="togglePage('prev')">Previous</button>
-  <div id="pagediv1" class="page">
+  <button id="buttonPrev1" onclick="togglePage('prev')">Previous</button>
+  <div id="pagediv1" class="page1">
     
     <!-- Page 1 Div Element -->
     <p><b>I</b>t was the dead of night and I was riding in a wagon to an unknown location in the woods with someone I had met about an hour ago. All because I really need some money…</p>
@@ -129,7 +129,7 @@
 
   <!-- Add more div elements as needed -->
 
-  <button id="button2" onclick="togglePage('next')">Next</button>
+  <button id="buttonNext1" onclick="togglePage('next')">Next</button>
 </div>
 
 
@@ -164,6 +164,48 @@
   <p>Website section 2 test text</p>
   <p>Website section 2 test text</p>
 </div>
+
+
+  <div class="page-container2">
+  <button id="buttonPrev2" onclick="togglePage('prev')">Previous</button>
+  <div id="pagediv6" class="page2">
+    
+    <!-- Page 1 Div Element -->
+    <p><b>I</b>t was the dead of night and I was riding in a wagon to an unknown location in the woods with someone I had met about an hour ago. All because I really need some money…</p>
+    <!-- More content from Page 1 -->
+  </div>
+
+  <div id="pagediv7" class="page">
+    
+    <!-- Page 2 Div Element -->
+    <p>I spent my last money on a drink that I sipped while thinking about how I should have stayed out of this place and never picked up cards in my life. The saloon was as busy as ever late in the evening and an indistinct loud chatter filled the entire floor. People smoking and drinking. Some about to fight, some downed, already losers in past fight</p>
+    <!-- More content from Page 2 -->
+  </div>
+
+  <div id="pagediv8" class="page">
+    
+    <!-- Page 3 Div Element -->
+    <p>He didn't say anything at first, but I felt like having a chat with someone. I inquired about where he was from because to me he didn’t look like a local. I’d never seen him before. He put down his glass and told me his name was George. I asked if he was from here. He signed "no". "Somerton." George said in a dry tone.</p>
+    <!-- More content from Page 3 -->
+  </div>
+
+  <div id="pagediv9" class="page">
+    
+    <!-- Page 4 Div Element -->
+    <p>This is the div4 test text.</p>
+  </div>
+
+   <div id="pagediv10" class="page">
+    
+    <!-- Page 5 Div Element -->
+    <p>This is the div5 test text.</p>
+  </div>
+
+  <!-- Add more div elements as needed -->
+
+  <button id="buttonNext2" onclick="togglePage('next')">Next</button>
+</div>
+
   
                                                </div> <!-- Website Section *2* - End -->
 
@@ -208,22 +250,47 @@
     
 
 <script>
-  var currentPageIndex = 1;
 
-  function togglePage(direction) {
-    var pages = document.querySelectorAll('.page');
-    var totalPages = pages.length;
+  
+  function createFlippingSystem(containerId, buttonPrevId, buttonNextId, pagesClass) {
+    var currentPageIndex = 1;
 
-    if (direction === 'next') {
-      currentPageIndex = (currentPageIndex % totalPages) + 1;
-    } else if (direction === 'prev') {
-      currentPageIndex = (currentPageIndex - 2 + totalPages) % totalPages + 1;
+    function togglePage(direction) {
+        var container = document.getElementById(containerId);
+        var pages = container.querySelectorAll('.' + pagesClass);
+        var totalPages = pages.length;
+
+        if (direction === 'next') {
+            currentPageIndex = (currentPageIndex % totalPages) + 1;
+        } else if (direction === 'prev') {
+            currentPageIndex = (currentPageIndex - 2 + totalPages) % totalPages + 1;
+        }
+
+        pages.forEach((page, index) => {
+            page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
+        });
     }
 
-    pages.forEach((page, index) => {
-      page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
-    });
-  }
+    var buttonPrev = document.getElementById(buttonPrevId);
+    var buttonNext = document.getElementById(buttonNextId);
+
+    if (buttonPrev && buttonNext) {
+        buttonPrev.addEventListener('click', function () {
+            togglePage('prev');
+        });
+
+        buttonNext.addEventListener('click', function () {
+            togglePage('next');
+        });
+    }
+}
+
+
+
+
+
+createFlippingSystem('pageContainer1', 'buttonPrev1', 'buttonNext1', 'page1');
+createFlippingSystem('pageContainer2', 'buttonPrev2', 'buttonNext2', 'page2');
 
 
 
@@ -298,12 +365,12 @@
 
 
 <style>
-  .page-container {
+  .page-container1, .page-container2 {
     display: flex;
     justify-content: space-between;
   }
 
-  .page {
+  .page1, .page2 {
     width: 500px;
     height: 700px;
     border: 2px solid black;
@@ -315,12 +382,12 @@
     font-family: Cambria, Arial; /* Corrected property name */
   }
 
-  #pagediv1 {
+  #pagediv1, #pagediv2, #pagediv3, #pagediv4, #pagediv5, #pagediv6, #pagediv7, #pagediv8, #pagediv9, #pagediv10 {
     display: block;
   }
 
-  #button1,
-  #button2 {
+  #buttonPrev1,
+  #buttonNext1 {
     padding: 10px;
     height: 30px;
     width: 100px;
