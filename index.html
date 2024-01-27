@@ -57,7 +57,40 @@
 
 
 
-    
+                                                <!--- New flipping system test space - Start --->
+
+
+
+
+<!-- System 1 -->
+<div id="FippableAuthorContentBox1" class="fippable-author-content-box">
+    <button id="PreviousButtonPage1" class="previous-button" onclick="togglePage('previous', 1)">Previous</button>
+    <p>Content for FippableAuthorContentBox1</p>
+    <button id="NextButtonPage1" class="next-button" onclick="togglePage('next', 1)">Next</button>
+</div>
+
+<!-- System 2 -->
+<div id="FippableAuthorContentBox2" class="fippable-author-content-box">
+    <button id="PreviousButtonPage2" class="previous-button" onclick="togglePage('previous', 2)">Previous</button>
+    <p>Content for FippableAuthorContentBox2</p>
+    <button id="NextButtonPage2" class="next-button" onclick="togglePage('next', 2)">Next</button>
+</div>
+
+<!-- System 3 -->
+<div id="FippableAuthorContentBox3" class="fippable-author-content-box">
+    <button id="PreviousButtonPage3" class="previous-button" onclick="togglePage('previous', 3)">Previous</button>
+    <p>Content for FippableAuthorContentBox3</p>
+    <button id="NextButtonPage3" class="next-button" onclick="togglePage('next', 3)">Next</button>
+</div>
+
+<!-- Add more systems as needed -->
+
+
+
+  
+
+
+                                                <!--- New flipping system test space - End --->
 
   
 
@@ -274,6 +307,38 @@ var currentPageIndex = 1;
         });
   
 
+
+
+
+
+
+
+
+
+
+
+
+function togglePage(direction, systemNumber) {
+        var currentBox = document.getElementById('FippableAuthorContentBox' + systemNumber);
+        var nextBoxNumber = (direction === 'next') ? systemNumber + 1 : systemNumber - 1;
+        var nextBox = document.getElementById('FippableAuthorContentBox' + nextBoxNumber);
+
+        if (nextBox) {
+            currentBox.style.display = 'none';
+            nextBox.style.display = 'block';
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+  
   
 </script>
 
