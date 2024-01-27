@@ -310,6 +310,24 @@ var square1 = document.getElementById('Square1');
             }
         }
 
+        // Event listeners for keyboard keys
+        document.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case 'w':
+                    moveSquare('up');
+                    break;
+                case 'a':
+                    moveSquare('left');
+                    break;
+                case 'd':
+                    moveSquare('right');
+                    break;
+                case 's':
+                    moveSquare('down');
+                    break;
+            }
+        });
+
 
 
 
