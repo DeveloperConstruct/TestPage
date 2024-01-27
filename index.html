@@ -232,23 +232,6 @@
 
 
 
-var currentPageIndex = 1;
-
-        function togglePage(direction) {
-            var pages = document.querySelectorAll('.page');
-            var totalPages = pages.length;
-
-            if (direction === 'next') {
-                currentPageIndex = (currentPageIndex % totalPages) + 1;
-            } else if (direction === 'prev') {
-                currentPageIndex = (currentPageIndex - 2 + totalPages) % totalPages + 1;
-            }
-
-            pages.forEach((page, index) => {
-                page.style.display = index + 1 === currentPageIndex ? 'block' : 'none';
-            });
-        }
-
 
 
 
