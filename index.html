@@ -290,6 +290,7 @@ var square1 = document.getElementById('Square1');
         function moveSquare() {
             var currentPosition = parseInt(window.getComputedStyle(square1).top) || 0;
             square1.style.top = (currentPosition - 5) + 'px';
+        }
 
 
 
@@ -432,8 +433,9 @@ var square1 = document.getElementById('Square1');
         #Square1TopButton {
             position: absolute;
             top: -30px; /* Adjusted to make sure the button doesn't obstruct the square */
+        }
+
   
-      
   
 </style>
     
