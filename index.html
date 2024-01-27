@@ -30,6 +30,11 @@
 <div class="Vertical-Space-Div"> </div>
 
 
+<div id="Square1">
+        <button id="Square1TopButton" onclick="moveSquare()">Press me</button>
+    </div>
+
+    
                                         <!-- Place for Website Section Buttons - Start-->
 
 <div id="AuthorButtonsCase">
@@ -274,6 +279,25 @@ var currentPageIndex = 1;
         });
   
 
+
+
+
+
+
+
+var square1 = document.getElementById('Square1');
+
+        function moveSquare() {
+            var currentPosition = parseInt(window.getComputedStyle(square1).top) || 0;
+            square1.style.top = (currentPosition - 5) + 'px';
+
+
+
+
+
+
+
+  
   
 </script>
 
@@ -396,6 +420,19 @@ var currentPageIndex = 1;
     
   }
 
+
+#Square1 {
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            position: relative;
+            transition: 0.3s ease;
+        }
+
+        #Square1TopButton {
+            position: absolute;
+            top: -10px;
+        }
   
       
   
